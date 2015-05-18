@@ -1,0 +1,23 @@
+{
+  "name": "jpkleemans-angular-validate",
+  "version": "0.1.0",
+  "description": "Painless form validation for AngularJS. Powered by the jQuery Validation Plugin.",
+  "authors": [
+    "Jan-Paul Kleemans <jpkleemans@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jpkleemans/angular-validate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpkleemans/angular-validate.git"
+  },
+  "main": "./dist/angular-validate.min.js",
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "jquery-validation": "~1.13.1"
+  }
+}
