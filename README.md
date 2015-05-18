@@ -25,7 +25,7 @@ $ bower install jpkleemans-angular-validate
 $ git clone https://github.com/jpkleemans/angular-validate.git
 ```
 
-- By manually downloading the latest release.
+- By manually downloading the [latest release](https://github.com/jpkleemans/angular-validate/releases/latest).
 
 > When using one of the last two methods make sure you also download the latest release of the [jQuery Validation Plugin](https://github.com/jzaefferer/jquery-validation).
 
