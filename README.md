@@ -1,5 +1,8 @@
 # Angular Validate
 
+[![Bower](https://img.shields.io/bower/v/jpkleemans-angular-validate.svg)](https://github.com/jpkleemans/angular-validate)
+[![GitHub license](https://img.shields.io/github/license/jpkleemans/angular-validate.svg)](https://github.com/jpkleemans/angular-validate/blob/master/LICENSE.md)
+
 Painless form validation for [AngularJS](https://github.com/angular/angular.js). Powered by the [jQuery Validation Plugin](https://github.com/jzaefferer/jquery-validation).
 
 ## Table of contents
