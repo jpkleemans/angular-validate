@@ -1,6 +1,6 @@
 # Angular Validate
 
-[![Bower](https://img.shields.io/bower/v/jpkleemans-angular-validate.svg)](https://github.com/jpkleemans/angular-validate)
+[![Bower](https://img.shields.io/bower/v/jpkleemans-angular-validate.svg)](https://github.com/jpkleemans/angular-validate/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/jpkleemans/angular-validate.svg)](https://github.com/jpkleemans/angular-validate/blob/master/LICENSE.md)
 
 Painless form validation for [AngularJS](https://github.com/angular/angular.js). Powered by the [jQuery Validation Plugin](https://github.com/jzaefferer/jquery-validation).
@@ -51,8 +51,8 @@ Add the ng-validate directive to your form and pass the validation options as va
 
 ```html
 <form name="register_form" ng-validate="validationOptions">
-	<input type="email" name="email">
-	<input type="password" name="password">
+    <input type="email" name="email">
+    <input type="password" name="password">
 </form>
 ```
 
@@ -62,26 +62,26 @@ Then set the validation options in your controller:
 
 ```js
 $scope.validationOptions = {
-	rules: {
-		email: {
-			required: true,
-			email: true
-		},
-		password: {
-			required: true,
-			minlength: 6
-		}
-	},
-	messages: {
-		email: {
-			required: "We need your email address to contact you",
-			email: "Your email address must be in the format of name@domain.com"
-		},
-		password: {
-			required: "You must enter a password",
-			minlength: "Your password must have a minimum length of 6 characters"
-		}
-	}
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        password: {
+            required: true,
+            minlength: 6
+        }
+    },
+    messages: {
+        email: {
+            required: "We need your email address to contact you",
+            email: "Your email address must be in the format of name@domain.com"
+        },
+        password: {
+            required: "You must enter a password",
+            minlength: "Your password must have a minimum length of 6 characters"
+        }
+    }
 }
 ```
 
@@ -99,9 +99,9 @@ Now you can validate the form by calling `validate()` on the form instance:
 
 ```js
 $scope.register = function () {
-	if($scope.registerForm.validate()) {
-		// Form is valid!
-	}
+    if($scope.registerForm.validate()) {
+        // Form is valid!
+    }
 }
 ```
 
@@ -144,12 +144,12 @@ Angular Validate ships with a $validatorProvider, that you can use to configure 
 
 ```js
 angular.module('myApp')
-	.config(function ($validatorProvider) {
-		$validatorProvider.setDefaults({
-			errorElement: 'span',
-			errorClass: 'help-block'
-		});
-	});
+    .config(function ($validatorProvider) {
+        $validatorProvider.setDefaults({
+            errorElement: 'span',
+            errorClass: 'help-block'
+        });
+    });
 ```
 
 > More info: http://jqueryvalidation.org/jQuery.validator.setDefaults
@@ -158,11 +158,11 @@ angular.module('myApp')
 
 ```js
 angular.module('myApp')
-	.config(function ($validatorProvider) {
-		$validatorProvider.addMethod("domain", function (value, element) {
-			return this.optional(element) || /^http:\/\/mydomain.com/.test(value);
-		}, "Please specify the correct domain for your documents");
-	});
+    .config(function ($validatorProvider) {
+        $validatorProvider.addMethod("domain", function (value, element) {
+            return this.optional(element) || /^http:\/\/mydomain.com/.test(value);
+        }, "Please specify the correct domain for your documents");
+    });
 ```
 
 > More info: http://jqueryvalidation.org/jQuery.validator.addMethod
