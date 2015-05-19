@@ -138,7 +138,7 @@ A set of standard validation rules is provided by the jQuery Validation Plugin:
 
 ## Configuration
 
-Angular Validate ships with a $validatorProvider, that you can use to configure default settings and custom validation rules. 
+Angular Validate ships with a $validatorProvider, that you can use to configure default validation options and custom validation rules. 
 
 #### Default validation options
 
