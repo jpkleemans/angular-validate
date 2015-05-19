@@ -32,7 +32,7 @@ $ git clone https://github.com/jpkleemans/angular-validate.git
 
 > When using one of the last two methods make sure you also download the latest release of the [jQuery Validation Plugin](https://github.com/jzaefferer/jquery-validation).
 
-Include both `jquery.validate.min.js` and `angular-validate.min.js` in your HTML page:
+Include both `jquery.validate.min.js` and `angular-validate.min.js` in your HTML page (after jQuery and Angular):
 
 ```html
 <script src="path/to/jquery.validate.min.js"></script>
@@ -138,7 +138,7 @@ A set of standard validation rules is provided by the jQuery Validation Plugin:
 
 ## Configuration
 
-Angular Validate ships with a $validatorProvider, which implements all the static methods of the [Validator](http://jqueryvalidation.org/documentation/#link-validator) object from the jQuery Validation Plugin.
+Angular Validate ships with a $validatorProvider, that you can use to configure default settings and custom validation rules. 
 
 #### Default validation options
 
