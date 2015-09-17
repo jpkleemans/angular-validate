@@ -95,7 +95,7 @@ Or (for simple forms) insert the options directly without using a controller:
 
 #### Check form validity
 
-Now you can validate the form by calling `validate()` on the form instance:
+Now you can validate the form by calling `validate()` on the [form instance](https://docs.angularjs.org/guide/forms):
 
 ```js
 $scope.register = function () {
