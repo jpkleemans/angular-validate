@@ -29,6 +29,10 @@
         })
 
         .provider('$validator', function () {
+            $.validator.setDefaults({
+                onsubmit: false // to prevent validating twice
+            });
+
             return {
                 setDefaults: function (options) {
                     $.validator.setDefaults(options);
