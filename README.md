@@ -35,7 +35,12 @@ $ git clone https://github.com/jpkleemans/angular-validate.git
 Include both `jquery.validate.min.js` and `angular-validate.min.js` in your HTML page (after jQuery and Angular):
 
 ```html
+<!-- jQuery scripts -->
+<script src="path/to/jquery.min.js"></script>
 <script src="path/to/jquery.validate.min.js"></script>
+
+<!-- Angular scripts -->
+<script src="path/to/angular.min.js"></script>
 <script src="path/to/angular-validate.min.js"></script>
 ```
 
@@ -50,7 +55,7 @@ angular.module('myApp', ['ngValidate']);
 Add the ng-validate directive to your form and pass the validation options as value:
 
 ```html
-<form name="register_form" ng-validate="validationOptions">
+<form name="registerform" ng-validate="validationOptions">
     <input type="email" name="email">
     <input type="password" name="password">
 </form>
@@ -88,7 +93,7 @@ $scope.validationOptions = {
 Or (for simple forms) insert the options directly without using a controller:
 
 ```html
-<form name="simple_form" ng-validate="{rules: {name: "required"}}">
+<form name="simpleform" ng-validate="{rules: {name: "required"}}">
 ```
 
 > For all available options, see: http://jqueryvalidation.org/validate#validate-options
@@ -99,7 +104,7 @@ Now you can validate the form by calling `validate()` on the [form instance](htt
 
 ```js
 $scope.register = function () {
-    if($scope.registerForm.validate()) {
+    if($scope.registerform.validate()) {
         // Form is valid!
     }
 }
