@@ -115,7 +115,7 @@ $scope.register = function () {
 #### Get number of invalid fields
 
 ```js
-$window.alert("There are " + $scope.registerForm.numberOfInvalids() + " invalid fields.");
+$window.alert("There are " + $scope.registerform.numberOfInvalids() + " invalid fields.");
 ```
 
 ## Built-in validation rules
