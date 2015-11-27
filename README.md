@@ -32,7 +32,7 @@ $ git clone https://github.com/jpkleemans/angular-validate.git
 
 > When using one of the last two methods make sure you also download the latest release of the [jQuery Validation Plugin](https://github.com/jzaefferer/jquery-validation).
 
-Include both `jquery.validate.min.js` and `angular-validate.min.js` in your HTML page (after jQuery and Angular):
+Include both `jquery.validate.min.js` and `angular-validate.min.js` in your HTML page:
 
 ```html
 <!-- jQuery scripts -->
