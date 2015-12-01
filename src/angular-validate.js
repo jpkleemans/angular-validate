@@ -11,14 +11,16 @@
                 link: function (scope, element, attrs, form) {
                     var validator = element.validate(scope.ngValidate);
 
-                    form.validate = function (showErrors) {
-                        if (typeof showErrors === 'undefined') showErrors = true;
+                    form.validate = function (options) {
+                        var oldSettings = validator.settings;
 
-                        if (showErrors) {
-                            return validator.form();
-                        } else {
-                            return validator.checkForm();
-                        }
+                        validator.settings = $.extend(true, {}, validator.settings, options);
+
+                        var valid = validator.form();
+
+                        validator.settings = oldSettings; // Reset to old settings
+
+                        return valid;
                     };
 
                     form.numberOfInvalids = function () {

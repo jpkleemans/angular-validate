@@ -110,7 +110,7 @@ $scope.register = function () {
 }
 ```
 
-> By default, invalid fields are highlighted when calling `validate()`. If you don't want this, you can pass `false` as the first parameter: `validate(false)`.
+> You can also pass your validation options as the first parameter of `validate()`.
 
 #### Get number of invalid fields
 
