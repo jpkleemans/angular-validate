@@ -55,7 +55,7 @@ angular.module('myApp', ['ngValidate']);
 Add the ng-validate directive to your form and pass the validation options as value:
 
 ```html
-<form name="registerform" ng-validate="validationOptions">
+<form name="registerform" ng-submit="register(registerform)" ng-validate="validationOptions">
     <input type="email" name="email">
     <input type="password" name="password">
 </form>
@@ -93,7 +93,7 @@ $scope.validationOptions = {
 Or (for simple forms) insert the options directly without using a controller:
 
 ```html
-<form name="simpleform" ng-validate="{rules: {name: "required"}}">
+<form name="simpleform" ng-submit="register(simpleform)" ng-validate="{rules: {name: "required"}}">
 ```
 
 > For all available options, see: http://jqueryvalidation.org/validate#validate-options
@@ -103,8 +103,8 @@ Or (for simple forms) insert the options directly without using a controller:
 Now you can validate the form by calling `validate()` on the [form instance](https://docs.angularjs.org/guide/forms):
 
 ```js
-$scope.register = function () {
-    if($scope.registerform.validate()) {
+$scope.register = function (form) {
+    if(form.validate()) {
         // Form is valid!
     }
 }
@@ -115,7 +115,7 @@ $scope.register = function () {
 #### Get number of invalid fields
 
 ```js
-$window.alert("There are " + $scope.registerform.numberOfInvalids() + " invalid fields.");
+$window.alert("There are " + form.numberOfInvalids() + " invalid fields.");
 ```
 
 ## Built-in validation rules
