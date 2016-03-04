@@ -106,6 +106,9 @@ Now you can validate the form by calling `validate()` on the [form instance](htt
 $scope.register = function (form) {
     if(form.validate()) {
         // Form is valid!
+    }else{
+       // Focus on invalid element
+       form.focusInvalid();
     }
 }
 ```
