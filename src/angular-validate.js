@@ -42,8 +42,11 @@
                 addMethod: function (name, method, message) {
                     $.validator.addMethod(name, method, message);
                 },
-                extendMessages: function (messages) {
+                setDefaultMessages: function (messages) {
                     angular.extend($.validator.messages, messages);
+                },
+                format: function(source, params) {
+                    return $.validator.format(source, params);
                 },
                 $get: function () {
                     return {};

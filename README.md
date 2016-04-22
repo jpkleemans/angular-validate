@@ -177,7 +177,7 @@ angular.module('myApp')
 ```js
 angular.module('myApp')
     .config(function ($validatorProvider) {
-        $validatorProvider.extendMessages({
+        $validatorProvider.setDefaultMessages({
             required: "This field is required.",
             remote: "Please fix this field.",
             email: "Please enter a valid email address.",
@@ -189,12 +189,14 @@ angular.module('myApp')
             creditcard: "Please enter a valid credit card number.",
             equalTo: "Please enter the same value again.",
             accept: "Please enter a value with a valid extension.",
-            maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
-            minlength: jQuery.validator.format("Please enter at least {0} characters."),
-            rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
-            range: jQuery.validator.format("Please enter a value between {0} and {1}."),
-            max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
-            min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+            maxlength: $validatorProvider.format("Please enter no more than {0} characters."),
+            minlength: $validatorProvider.format("Please enter at least {0} characters."),
+            rangelength: $validatorProvider.format("Please enter a value between {0} and {1} characters long."),
+            range: $validatorProvider.format("Please enter a value between {0} and {1}."),
+            max: $validatorProvider.format("Please enter a value less than or equal to {0}."),
+            min: $validatorProvider.format("Please enter a value greater than or equal to {0}.")
         });
     });
 ```
+
+> More info: http://jqueryvalidation.org/jQuery.validator.format
