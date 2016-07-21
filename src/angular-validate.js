@@ -36,18 +36,12 @@
             });
 
             return {
-                setDefaults: function (options) {
-                    $.validator.setDefaults(options);
-                },
-                addMethod: function (name, method, message) {
-                    $.validator.addMethod(name, method, message);
-                },
+                setDefaults: $.validator.setDefaults,
+                addMethod: $.validator.addMethod,
                 setDefaultMessages: function (messages) {
                     angular.extend($.validator.messages, messages);
                 },
-                format: function (source, params) {
-                    return $.validator.format(source, params);
-                },
+                format: $.validator.format,
                 $get: function () {
                     return {};
                 }
