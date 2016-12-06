@@ -26,6 +26,10 @@
                     form.numberOfInvalids = function () {
                         return validator.numberOfInvalids();
                     };
+                    
+                    form.focusInvalid = function(){
+                        return validator.focusInvalid();
+                    }
                 }
             };
         })
