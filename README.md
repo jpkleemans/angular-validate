@@ -16,6 +16,13 @@ Painless form validation for [AngularJS](https://github.com/angular/angular.js).
 
 Download Angular Validate:
 
+
+- With NPM:
+
+```sh
+$ npm install jpkleemans-angular-validate
+```
+
 - With Bower:
 
 ```sh
