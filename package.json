@@ -1,8 +1,8 @@
 {
   "name": "jpkleemans-angular-validate",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "\"jQuery validator plugin for angularjs\"",
-  "main": "Gruntfile.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,9 +23,7 @@
   "homepage": "https://github.com/jpkleemans/angular-validate#readme",
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-contrib-uglify": "~0.9.1"
-  },
-  "dependencies": {
+    "grunt-contrib-uglify": "~0.9.1",
     "bower": "~1.4.1"
   }
 }
