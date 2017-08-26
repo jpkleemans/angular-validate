@@ -5,6 +5,8 @@
 
 Painless form validation for [AngularJS](https://github.com/angular/angular.js). Powered by the [jQuery Validation Plugin](https://github.com/jzaefferer/jquery-validation).
 
+[DEMO](https://jsfiddle.net/fdnh3s4L/23/)
+
 ## Table of contents
 
 1. [Installation](#installation)
